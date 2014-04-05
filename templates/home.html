@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for blog in blog_list %}
+
+<h3> 
+    <a href="{% url 'update_blog_view' blog.id %}">
+        Blog Title: {{ blog.title }}
+    </a>
+</h3>
+<br/>
+<div> 
+    {{ blog.content|safe }}
+</div>
+
+<hr/>
+
+{% endfor %}
+
+{% endblock %}

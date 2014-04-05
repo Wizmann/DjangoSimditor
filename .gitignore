@@ -49,6 +49,9 @@ coverage.xml
 *.log
 *.pot
 
+# db for test
+*.sqlite3
+
 # Sphinx documentation
 docs/_build/
 

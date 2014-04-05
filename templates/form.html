@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load bootstrap3 %}
+
+<form action="" method="POST">
+{% csrf_token %}
+{{ form.media }}
+{% bootstrap_form form %}
+{% buttons %}
+    <button type="submit" class="btn btn-primary">
+        {% bootstrap_icon "star" %} Submit
+    </button>
+{% endbuttons %}
+</form>
+
+{% endblock %}
