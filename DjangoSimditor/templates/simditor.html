@@ -1,9 +1,13 @@
 <textarea name={{ Simditor.name }} id=id_{{ Simditor.name }} style="width:{{ Simditor.width }}px;{{ Simditor.css }}">
     {{ Simditor.value }}
 </textarea>
-
+<!-- Powered by DjangoSimditor By Wizmann -->
 <script>
 var editor = new Simditor({
-  textarea: $('#id_{{ Simditor.name }}')
+    textarea: $('#id_{{ Simditor.name }}'),
+    pasteImage: true,
+    upload: {
+        url: '/simditor/upload/image/',
+    }
 });
 </script>

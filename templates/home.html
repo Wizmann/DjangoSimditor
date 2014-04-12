@@ -5,7 +5,7 @@
 {% for blog in blog_list %}
 
 <h3> 
-    <a href="{% url 'update_blog_view' blog.id %}">
+    <a href="{% url update_blog_view blog.id %}">
         Blog Title: {{ blog.title }}
     </a>
 </h3>

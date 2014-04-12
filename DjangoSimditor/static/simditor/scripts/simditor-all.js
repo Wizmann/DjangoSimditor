@@ -3680,6 +3680,7 @@
             e = _error;
             msg = '上传出错了';
           }
+          
           if ((typeof simple !== "undefined" && simple !== null) && (simple.message != null)) {
             simple.message(msg);
           } else {

@@ -9,6 +9,5 @@ else:
 from views import UploadFile
 
 urlpatterns = patterns('',
-    url(r'^ImageUp/(?P<uploadpath>.*)',UploadFile,{'uploadtype':'image'}),
-    url(r'^FileUp/(?P<uploadpath>.*)',UploadFile,{'uploadtype':'file'}),
+    url(r'^upload/(?P<uploadpath>.*)', UploadFile, {'uploadtype':'image'}),
 )
